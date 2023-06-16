@@ -6,3 +6,239 @@
 body {
     background: #E5E5E5;
 }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  #burger, [for=burger] {
+    display: none;
+  }
+
+.top {
+    height: 815px;
+    background-image: url(img/background-top.png);
+}
+
+.container {
+    border: 1px solid black;
+    max-width: 1200px;
+    /* min-width: 375px; */
+    margin: 0 auto;
+}
+
+.logo__top {
+    background-image: url(img/logo_top.svg);
+    margin: 50px 10px 50px 10px;
+    width: 180px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.logo__top:hover {
+    /* display: inline-block; */
+    background: #EF2A82;
+    -webkit-mask-image: url(img/logo_top.svg);
+    mask-image:url(img/logo_top.svg);
+}
+
+
+.header, a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8794BA;
+}
+
+label {
+    /* text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400; */
+    font-size: 24px;
+    line-height: 24px;
+    color: #8794BA;
+}
+
+.nav__left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__right {
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.sign {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-link {
+    margin: auto;
+}
+
+.header-nav {
+    max-width: 352px;
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+
+}
+.space {
+    max-width: 500px;
+}
+.signin__top {
+    margin: 30px;
+}
+
+.signup__top {
+    width: 161px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 68px;
+    margin: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@media screen and (max-width: 1024px) {
+    .signup__top {
+        display: none;
+
+    }
+
+    .signin__top {
+        margin: 10px;
+        margin-right: 22px;
+
+    }
+
+    .logo__top {
+
+        margin: 20px 10px;
+        width: 135px;
+        height: 30px;
+ 
+    }
+
+    .logo__top:hover {
+        /* display: inline-block; */
+        margin: 20px 10px;
+        width: 135px;
+        height: 30px;
+        background: #EF2A82;
+        -webkit-mask-image: url(img/logo_top.svg);
+        mask-image:url(img/logo_top.svg);
+    }
+
+    .header-nav {
+        /* gap: 0px; */
+        /* margin-left: 0px; */
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        /* width: 100%; */
+        /* margin: auto 0; */
+     } 
+
+    .header-nav {
+        display: none;
+    }
+    .nav__right {
+        margin: 0px;
+        order: 1;
+    }
+    .signin__top {
+        margin: 0;
+        margin-right: 18px;
+        /* justify-content: flex-end; */
+    }
+
+    .space {
+        /* display: none; */
+        /* width: ; */
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .header-link {
+        padding: 0;
+        display: block;
+        margin: 10px 10px;
+    }
+    label:hover {
+        color: white;
+    }
+    [for=burger] {
+        display: block;
+        position: fixed;
+        width: 24px;
+        text-align: center;
+        right: 22px;
+        top: 23px;
+        
+    }
+      [for=burger]::before {
+        content: "☰";
+
+        
+    }
+      .header-nav {
+        display: none;
+        position: fixed;
+        top: 70px;
+        right: 10px;
+        margin-top: 30px;
+        background: #172655bd;
+        width: 50%;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+                user-select: none;
+    }
+      .header-nav {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+      #burger:checked + label + .header-nav {
+        display: block;
+        animation: show 0.5s ease;
+        
+    }
+      #burger:checked + [for=burger]::before {
+        content: "🞫";
+        
+    }
+}
