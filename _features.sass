@@ -1,0 +1,112 @@
+.features
+    padding: 0 10px
+
+.main__features
+    margin-top: 38px
+
+.title__h2
+    padding-bottom: 30px
+    max-width: 620px
+    margin: 0 auto
+    @include text(700, 40px, 47px, #172755)
+    text-align: center
+
+.description__features
+    
+    max-width: 1060px
+    margin: 0 auto
+    @include text(400, 18px, 27px, #8794BA)
+    text-align: center
+
+.icons
+    margin-top: 80px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    gap: 1%
+
+.item__icon
+    width: 32.5%
+
+.icon
+    width: 60px
+    height: 60px
+    
+.clock
+    background: url(img/Icon_clock.svg) center/60px 60px no-repeat
+
+.monitor
+    background: url(img/Icon_monitor.svg) center/60px 60px no-repeat
+
+.rocket
+    background: url(img/Icon_rocket.svg) center/60px 60px no-repeat
+
+.title__icon
+    @include text(700, 16px, 19px, #172755)
+    text-align: center
+
+.desc__icon
+    margin: 15px 10px 0
+    @include text(400, 16px, 140%, #8794BA)
+    text-align: center
+
+.item__icon
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    gap: 27px
+
+@media screen and (max-width: 600px)
+    .features
+        padding: 0 5%
+
+    .title__h2, .description__features
+        text-align: left
+
+    .title__h2
+        padding-bottom: 20px
+        
+        @include text(700, 30px, 35px, #172755)
+    
+
+    .description__features
+               
+        @include text(400, 14px, 140%, #8794BA)
+
+    .main__features
+        margin-top: 50px
+
+    .item__icon
+        width: 100%
+
+    .icons
+        gap: 35px
+
+    .title__icon
+        text-align: left
+
+    .desc__icon
+        margin: 9px 0 0
+        @include text(400, 14px, 140%, #8794BA)
+        text-align: left
+    
+    .item__icon
+        flex-wrap: nowrap
+        justify-content: space-between
+        flex-direction: row
+
+    .text__icon
+        width: 75%
+
+    
+@media screen and (max-width: 350px)   
+    .item__icon
+        justify-content: center
+        flex-direction: column
+        align-items: center
+    
+    .text__icon
+            width: 100%
+
+    .title__icon, .desc__icon
+        text-align: center
