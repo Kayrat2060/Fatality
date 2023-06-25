@@ -1,0 +1,70 @@
+.screenshots
+    margin-top: 130px
+    padding: 0 10px
+    display: flex
+    flex-direction: column
+    gap: 120px
+
+.screenshot
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+
+.screenshot2
+    flex-direction: row-reverse
+
+// .screenshot2
+    // flex-direction: none
+
+.screen__text
+    width: 41%
+
+.screen__img
+    width: 51%
+
+.screen__pic
+    width: 100%
+    border-radius: 6%
+    background: #FFF
+    box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.20)
+
+.screen__title
+    @include text(700, 40px, 47px, #172755)
+
+.screen__desc
+    margin-top: 30px
+    @include text(400, 18px, 27px, #8794BA)
+
+@media screen and (max-width: 1024px)
+    .screenshot
+        justify-content: center
+
+    .screenshots
+        margin-top: 70px
+        gap: 60px
+
+    .screen__text
+        width: 80%
+        text-align: center
+        
+    .screen__desc
+        margin: 20px 0 30px
+        text-align: center
+
+    .screen__img
+        width: 500px 
+
+@media screen and (max-width: 600px)
+    .screen__text
+        width: 100%
+    .screen__title
+        @include text(700, 30px, 35px, #172755)
+        text-align: left
+
+    .screen__desc
+        @include text(400, 14px, 140%, #8794BA)
+        text-align: left
+
+    .screen__img
+        max-width: 500px

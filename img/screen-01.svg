@@ -1,0 +1,38 @@
+<svg width="601" height="410" viewBox="0 0 601 410" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_737_1468)">
+<rect x="0.870605" width="600" height="410" rx="30" fill="white"/>
+</g>
+<path d="M111.885 140.077L220.871 77.1547L329.856 140.077V265.923L220.871 328.845L111.885 265.923V140.077Z" stroke="#EEEEF7" stroke-width="2"/>
+<path d="M149.99 162.077L220.871 121.155L291.751 162.077V243.923L220.871 284.845L149.99 243.923V162.077Z" stroke="#EEEEF7" stroke-width="2"/>
+<mask id="path-4-inside-1_737_1468" fill="white">
+<path d="M220.871 120L304.871 153L310.871 253.5L220.871 307L154.871 238L161.371 169L220.871 120Z"/>
+</mask>
+<path d="M220.871 120L304.871 153L310.871 253.5L220.871 307L154.871 238L161.371 169L220.871 120Z" stroke="#0088F0" stroke-width="8" mask="url(#path-4-inside-1_737_1468)"/>
+<mask id="path-5-inside-2_737_1468" fill="white">
+<path d="M220.871 107L267.871 177L299.371 249H220.871L167.177 234L134.871 154.5L220.871 107Z"/>
+</mask>
+<path d="M220.871 107L267.871 177L299.371 249H220.871L167.177 234L134.871 154.5L220.871 107Z" stroke="#EF2A82" stroke-width="8" mask="url(#path-5-inside-2_737_1468)"/>
+<path d="M196.756 189.077L220.871 175.155L244.985 189.077V216.923L220.871 230.845L196.756 216.923V189.077Z" stroke="#EEEEF7" stroke-width="2"/>
+<text fill="#EF2A82" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="39.4286" letter-spacing="0em"><tspan x="453.871" y="152.477">34%</tspan></text>
+<text fill="#8794BA" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="453.871" y="182.652">option 1</tspan></text>
+<text fill="#0088F0" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="39.4286" letter-spacing="0em"><tspan x="453.871" y="264.477">29%</tspan></text>
+<text fill="#8794BA" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="18" letter-spacing="0em"><tspan x="453.871" y="294.652">option 2</tspan></text>
+<text fill="#8794BA" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="206.212" y="63.6016">18-24</tspan></text>
+<text fill="#8794BA" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="347.212" y="141.602">25-34</tspan></text>
+<text fill="#8794BA" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="347.212" y="272.602">35-44</tspan></text>
+<text fill="#8794BA" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="206.212" y="357.602">45-54</tspan></text>
+<text fill="#8794BA" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="65.2124" y="272.602">55-64</tspan></text>
+<text fill="#8794BA" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="70.2163" y="141.602">65+</tspan></text>
+<defs>
+<filter id="filter0_d_737_1468" x="-34.1294" y="-17" width="670" height="480" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="15" operator="erode" in="SourceAlpha" result="effect1_dropShadow_737_1468"/>
+<feOffset dy="18"/>
+<feGaussianBlur stdDeviation="25"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0996452 0 0 0 0 0.164326 0 0 0 0 0.350284 0 0 0 0.2 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_737_1468"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_737_1468" result="shape"/>
+</filter>
+</defs>
+</svg>
