@@ -563,6 +563,7 @@ label {
   display: flex;
   flex-direction: column;
   gap: 120px;
+  padding-bottom: 114px;
 }
 
 .screenshot {
@@ -631,6 +632,9 @@ label {
   }
 }
 @media screen and (max-width: 600px) {
+  .screenshots {
+    padding-bottom: 56px;
+  }
   .screen__text {
     width: 100%;
   }
@@ -654,5 +658,286 @@ label {
   }
   .screen__img {
     max-width: 500px;
+  }
+}
+.price__plans {
+  height: 1086px;
+  background: url(img/Backgraund_bottom_new.png) right bottom/auto 1086px no-repeat;
+}
+
+.priceplans__text {
+  margin: 272px auto 80px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.pricing__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.pricing__desc {
+  max-width: 650px;
+  margin: 30px auto 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #8794BA;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.offers-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 10px;
+  overflow-x: hidden;
+}
+
+.offer {
+  flex-shrink: 0;
+  width: 340px;
+  height: 440px;
+  margin-bottom: 44px;
+  border-radius: 30px;
+  opacity: 0.7;
+  background: #0F1F4B;
+  box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+  text-align: center;
+}
+
+.offer__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  margin: 50px auto 10px;
+}
+
+.offer__desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #8794BA;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.hr1 {
+  width: 220px;
+  size: 1px;
+  border: 1px solid #2A407C;
+  margin: 37px auto 28px;
+}
+
+.offer__currency {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35pxpx;
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.offer__price {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70pxpx;
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.offer__period {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #8794BA;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  margin-bottom: 40px;
+}
+
+.order__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFF;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  display: inline-flex;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 68px;
+  border: 1px solid #2A407C;
+}
+
+.offer2 {
+  background: #FFF;
+  opacity: 1;
+  box-shadow: 0px 18px 50px -15px #060F28;
+}
+
+.offer__title2 {
+  color: #172755;
+}
+
+.hr2 {
+  border: 1px solid #D3D9E9;
+}
+
+.offer__currency2 {
+  color: #172755;
+}
+
+.offer__price2 {
+  color: #172755;
+}
+
+.order__button2 {
+  background: #EF2A82;
+  border: 1px solid #EF2A82;
+}
+
+.order__button:hover {
+  background: #EF2A82;
+  border: 1px solid #EF2A82;
+}
+
+.order__button2:hover {
+  background: #0F1F4B;
+  border: 1px solid #2A407C;
+}
+
+.line {
+  display: none;
+}
+
+@media screen and (max-width: 1115px) {
+  .offers-box {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .price__plans {
+    height: 860px;
+    background: url(img/background-bottom-small.png) right top/auto 860px no-repeat;
+  }
+  .line {
+    display: block;
+  }
+  .hr__prices {
+    size: 1px;
+    border: 1px solid #2A407C;
+    margin: 0 10px;
+  }
+  .priceplans__text {
+    margin: 150px auto 59px;
+  }
+  .pricing__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    text-align: left;
+  }
+  .pricing__desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #8794BA;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    text-align: left;
+    margin: 20px auto 0;
+  }
+  .offer {
+    flex-shrink: 0;
+    width: 280px;
+    height: 358px;
+    border-radius: 30px;
+    background: #FFF;
+    opacity: 1;
+    box-shadow: 0px 18px 50px -15px #060F28;
+    text-align: center;
+  }
+  .offer__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    color: #172755;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    margin: 35px auto 7px;
+  }
+  .offer__desc {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #8794BA;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+  }
+  .hr1 {
+    width: 220px;
+    size: 1px;
+    border: 1px solid #D3D9E9;
+    margin: 30px auto 20px;
+  }
+  .offer__currency {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35pxpx;
+    color: #172755;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+  }
+  .offer__price {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70pxpx;
+    color: #172755;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+  }
+  .offer__period {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #8794BA;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    margin-bottom: 36px;
+  }
+  .order__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFF;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    display: inline-flex;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 68px;
+    background: #EF2A82;
+    border: 1px solid #EF2A82;
+  }
+  .order__button:hover {
+    background: #0F1F4B;
+    border: 1px solid #2A407C;
   }
 }/*# sourceMappingURL=style.css.map */

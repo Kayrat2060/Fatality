@@ -1,0 +1,186 @@
+.price__plans
+    height: 1086px
+    background: url(img/Backgraund_bottom_new.png) right bottom/auto 1086px no-repeat
+
+.priceplans__text
+    margin: 272px auto 80px
+    padding: 0 10px
+    text-align: center
+
+.pricing__title
+    @include text(700, 40px, 47px, #FFF)
+
+.pricing__desc
+    max-width: 650px
+    margin: 30px auto 0
+    @include text(400, 18px, 27px, #8794BA)
+
+.offers-box
+    display: flex
+    justify-content: space-between
+    gap: 20px
+    padding: 0 10px
+    // position: relative
+    // position: absolute
+    // top: 488px
+    overflow-x: hidden
+
+.offer
+    flex-shrink: 0
+    width: 340px
+    height: 440px
+    margin-bottom: 44px
+    border-radius: 30px
+    opacity: 0.7
+    background: #0F1F4B
+    box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.20)
+    text-align: center
+    
+
+.offer__title
+    @include text(700, 30px, 35px, #FFF)
+    margin: 50px auto 10px
+
+.offer__desc
+    @include text(400, 18px, 27px, #8794BA)
+
+.hr1
+    width: 220px
+    size: 1px
+    border: 1px solid #2A407C
+    margin: 37px auto 28px
+
+.offer__currency
+    @include text(700, 30px, 35pxpx, #FFF)
+
+.offer__price
+    @include text(700, 60px, 70pxpx, #FFF)
+
+.offer__period
+    @include text(400, 18px, 27px, #8794BA)
+    margin-bottom: 40px
+
+.order__button
+    @include text(700, 16px, 19px, #FFF)
+    display: inline-flex
+    width: 200px
+    height: 50px
+    justify-content: center
+    align-items: center
+    border-radius: 68px
+    border: 1px solid #2A407C
+
+
+// белый оффер
+.offer2
+    background: #FFF
+    opacity: 1
+    box-shadow: 0px 18px 50px -15px #060F28
+
+.offer__title2
+    color: #172755
+
+.hr2
+    border: 1px solid #D3D9E9
+
+.offer__currency2
+    color: #172755
+
+.offer__price2
+    color: #172755
+
+.order__button2
+    background: #EF2A82
+    border: 1px solid #EF2A82
+
+.order__button:hover
+    background: #EF2A82
+    border: 1px solid #EF2A82
+
+.order__button2:hover
+    background: #0F1F4B
+    border: 1px solid #2A407C
+
+.line
+    display: none
+
+@media screen and (max-width: 1115px)
+    .offers-box
+        justify-content: center
+
+
+
+@media screen and (max-width: 600px)
+    .price__plans
+        height: 860px
+        background: url(img/background-bottom-small.png) right top/auto 860px no-repeat
+
+    .line
+        display: block
+
+    .hr__prices
+        size: 1px
+        border: 1px solid #2A407C
+        margin: 0 10px
+
+    .priceplans__text
+        margin: 150px auto 59px
+
+    .pricing__title
+        @include text(700, 30px, 35px, #fff)
+        text-align: left
+
+    .pricing__desc
+        @include text(400, 14px, 140%, #8794BA)
+        text-align: left
+        margin: 20px auto 0
+
+
+    .offer
+        flex-shrink: 0
+        width: 280px
+        height: 358px
+        border-radius: 30px
+        background: #FFF
+        opacity: 1
+        box-shadow: 0px 18px 50px -15px #060F28
+        text-align: center
+
+    .offer__title
+        @include text(700, 25px, 29px, #172755)
+        margin: 35px auto 7px
+
+    .offer__desc
+        @include text(400, 13px, 18px, #8794BA)
+
+    .hr1
+        width: 220px
+        size: 1px
+        border: 1px solid #D3D9E9
+        margin: 30px auto 20px
+
+    .offer__currency
+        @include text(700, 30px, 35pxpx, #172755)
+
+    .offer__price
+        @include text(700, 60px, 70pxpx, #172755)
+
+    .offer__period
+        @include text(400, 13px, 18px, #8794BA)
+        margin-bottom: 36px
+
+    .order__button
+        @include text(700, 16px, 19px, #FFF)
+        display: inline-flex
+        width: 200px
+        height: 50px
+        justify-content: center
+        align-items: center
+        border-radius: 68px
+        background: #EF2A82
+        border: 1px solid #EF2A82
+
+
+    .order__button:hover
+        background: #0F1F4B
+        border: 1px solid #2A407C
