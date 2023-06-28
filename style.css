@@ -940,4 +940,242 @@ label {
     background: #0F1F4B;
     border: 1px solid #2A407C;
   }
+}
+.signup__form {
+  max-width: 962px;
+  margin: 109px auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.use__analytics, .signup__box {
+  width: 50%;
+  height: 522px;
+}
+
+.signup__box {
+  background: url(img/bg_signup.png) bottom no-repeat;
+  display: flex;
+}
+
+.signup__logos, .signup {
+  max-width: 428px;
+  height: 475px;
+  background: #F8F9FF;
+}
+
+.logos__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #160637;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  margin: 47px 0 75px;
+}
+
+.trustedby {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8989A2;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  width: 140px;
+  text-align: center;
+}
+
+.trustedby__line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.left__hr, .right__hr {
+  color: rgb(214, 214, 214);
+  width: 144px;
+  height: 0;
+  color: rgb(214, 214, 214);
+}
+
+.client__logos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 302px;
+  height: 156px;
+}
+
+.logo__item {
+  width: 50%;
+  height: 77px;
+}
+
+.accenture {
+  background: url(img/accenture.svg) left top no-repeat;
+}
+
+.react {
+  background: url(img/react.svg) right top no-repeat;
+}
+
+.airbnb {
+  background: url(img/airbnb.svg) left bottom no-repeat;
+}
+
+.sky {
+  background: url(img/sky.svg) right bottom no-repeat;
+}
+
+.signup {
+  width: 100%;
+  margin: 0 auto;
+  display: inline-flex;
+  padding: 17px 5%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 4px 4px 12px 0px rgba(137, 137, 162, 0.12);
+}
+
+.signup__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #160637;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.button__freetrial {
+  width: 100%;
+  max-width: 344px;
+}
+
+.button__signup {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  display: inline-flex;
+  width: 100%;
+  max-width: 344px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(114, 46, 209);
+  background: rgb(114, 46, 209);
+  border-radius: 4px;
+}
+
+.input {
+  height: 51px;
+  width: 100%;
+  max-width: 348px;
+  padding: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  background-color: #fff;
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input::-moz-placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8989A2;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.input::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8989A2;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.help__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.stars {
+  display: flex;
+  justify-content: space-between;
+  width: 95px;
+}
+
+.star {
+  color: rgb(255, 211, 111);
+  font-size: 20px;
+}
+
+.signup_hr {
+  width: 336px;
+  height: 0;
+  border: 1px solid rgb(137, 137, 162);
+  opacity: 0.5;
+}
+
+.login {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.login__link {
+  color: rgb(114, 46, 209);
+}
+
+@media screen and (max-width: 1024px) {
+  .signup__form {
+    margin: 5vw auto;
+  }
+  .use__analytics {
+    display: none;
+  }
+  .signup__box {
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+  }
+  .signup {
+    max-width: 428px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 375px) {
+  .signup__form {
+    margin: 35px auto;
+  }
+  .signup__box, .signup {
+    height: 475px;
+  }
+  .button__signup {
+    max-width: 344px;
+  }
 }/*# sourceMappingURL=style.css.map */

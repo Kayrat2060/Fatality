@@ -1,0 +1,171 @@
+.signup__form
+    max-width: 962px
+    margin: 109px auto
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-between
+    // border: 1px solid black
+
+.use__analytics, .signup__box
+    width: 50%
+    height: 522px
+    // border: 1px solid black
+
+.signup__box
+    background: url(img/bg_signup.png) bottom no-repeat
+    display: flex
+
+
+.signup__logos, .signup
+    max-width: 428px
+    height: 475px
+    // border: 1px solid black
+    background: #F8F9FF
+
+
+.logos__title
+    @include text(700, 32px, 40px, #160637)
+    margin: 47px 0 75px
+
+.trustedby
+    @include text(500, 16px, 24px, #8989A2)
+    width: 140px
+    text-align: center
+
+.trustedby__line
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 50px
+
+.left__hr, .right__hr
+    color: rgba(214, 214, 214, 1)
+    width: 144px
+    height: 0
+    color: rgba(214, 214, 214, 1)
+
+.client__logos
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    max-width: 302px
+    height: 156px
+
+.logo__item
+    width: 50%
+    height: 77px
+
+.accenture
+    background: url(img/accenture.svg) left top no-repeat
+
+.react
+    background: url(img/react.svg) right top no-repeat
+
+.airbnb
+    background: url(img/airbnb.svg) left bottom no-repeat
+
+.sky
+    background: url(img/sky.svg) right bottom no-repeat
+
+.signup
+    width: 100%
+    margin: 0 auto
+    display: inline-flex
+    padding: 17px 5%
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 15px
+    
+    border-radius: 8px
+    background: #FFF
+
+    box-shadow: 4px 4px 12px 0px rgba(137, 137, 162, 0.12)
+
+.signup__title
+    @include text(700, 24px, 32px, #160637)
+
+.button__freetrial
+    width: 100%
+    max-width: 344px
+
+.button__signup
+    @include text(500, 16px, 24px, #fff)
+    display: inline-flex
+    width: 100%
+    max-width: 344px
+    height: 48px
+    justify-content: center
+    align-items: center
+    border: 1px solid rgba(114, 46, 209, 1)
+    background: rgba(114, 46, 209, 1)
+    border-radius: 4px
+
+.input
+    height: 51px
+    width: 100%
+    max-width: 348px
+    padding: 16px
+    @include text(500, 16px, 19px, #000)
+    background-color: #fff
+    // background-clip: padding-box
+    border: 1px solid #D9D9D9
+    border-radius: 4px
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+
+.input::placeholder
+    @include text(500, 16px, 19px, #8989A2)
+
+.help__title
+    @include text(500, 16px, 19px, #000)
+
+.stars
+    display: flex
+    justify-content: space-between
+    // height: 15px
+    width: 95px
+
+.star
+    // height: 15px
+    color: rgba(255, 211, 111, 1)
+    font-size: 20px
+
+.signup_hr
+    width: 336px
+    height: 0
+    border: 1px solid rgba(137, 137, 162, 1)
+    opacity: 0.5
+
+.login
+    @include text(500, 16px, 19px, #000)
+
+.login__link
+    color: rgba(114, 46, 209, 1)
+
+@media screen and (max-width: 1024px)
+    .signup__form
+        margin: 5vw auto
+
+    .use__analytics
+        display: none
+
+    .signup__box
+        width: 100%
+        max-width: 480px
+        margin: auto
+    
+
+    .signup
+        max-width: 428px
+        margin: 0 auto
+        overflow-x: hidden
+
+@media screen and (max-width: 375px)
+    .signup__form
+        margin: 35px auto
+
+    .signup__box, .signup
+        height: 475px
+
+    .button__signup
+        max-width: 344px
