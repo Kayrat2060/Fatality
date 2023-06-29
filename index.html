@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>Document</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c2db0fda3e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <div class="top">
         <header class="header container">
 
             <div class="nav__left">
-                <div class="logo__top"></div>
+                <div class="logo__top" onclick="location.href='#';"></div>
             </div>
 
             <div class="nav__right">
@@ -181,7 +183,7 @@
             <div class="signup">
                 <h2 class="signup__title">Sign Up</h2>
                 <div class="button__freetrial">
-                    <a href="" class="button__signup">Start your free trial</a>
+                    <a href="#" class="button__signup">Start your free trial</a>
                 </div>
                 <input type="text" class="input email" name="email" placeholder="Your primary email">
                 <input type="text" class="input password" name="password" placeholder="Password">
@@ -196,9 +198,36 @@
                 </div>
                 <hr class="signup_hr">
                 <p class="login">Already have an account? <a href="#" class="login login__link">Login</a></p>
-                
             </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="container footer__cont">
+            <div class="logo__bottom" onclick="location.href='#';"></div>
+            <div class="footer__nav">
+                <a href="#" class="menu__item">Product</a>
+                <a href="#" class="menu__item">Pricing Plans</a>
+                <a href="#" class="menu__item">FAQ</a>
+                <a href="#" class="menu__item">Blog</a>
+            </div>
+            <div class="socials">
+                <div class="icon__soc facebook" onclick="location.href='#';">
+                    <span class="icon__soc facebook" style="font-size: 1em;">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </span>
+                </div>
+                <div class="icon__soc twitter" onclick="location.href='#';">
+                    <span class="icon__soc twitter" style="font-size: 1em;">
+                        <i class="fa-brands fa-twitter"></i>
+                    </span>
+                </div>
+                <div class="icon__soc instagram" onclick="location.href='#';">
+                    <span class="icon__soc instagram" style="font-size: 1em;">
+                        <i class="fa-brands fa-instagram"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

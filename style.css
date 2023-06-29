@@ -10,7 +10,6 @@ body {
 }
 
 .container {
-  border: 1px solid black;
   max-width: 1200px;
   min-width: 200px;
   margin: 0 auto;
@@ -234,6 +233,9 @@ label {
     background: #EF2A82;
     -webkit-mask-image: url(img/logo_top_mini.svg);
     --mask-image:url(img/logo_top_mini.svg);
+  }
+  .header-nav {
+    gap: 3.5vw;
   }
   .main {
     flex-wrap: wrap;
@@ -663,6 +665,7 @@ label {
 .price__plans {
   height: 1086px;
   background: url(img/Backgraund_bottom_new.png) right bottom/auto 1086px no-repeat;
+  padding-top: 1px;
 }
 
 .priceplans__text {
@@ -740,7 +743,7 @@ label {
 .offer__currency {
   font-weight: 700;
   font-size: 30px;
-  line-height: 35pxpx;
+  line-height: 35px;
   color: #FFF;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -749,7 +752,7 @@ label {
 .offer__price {
   font-weight: 700;
   font-size: 60px;
-  line-height: 70pxpx;
+  line-height: 70px;
   color: #FFF;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -898,7 +901,7 @@ label {
   .offer__currency {
     font-weight: 700;
     font-size: 30px;
-    line-height: 35pxpx;
+    line-height: 35px;
     color: #172755;
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -906,7 +909,7 @@ label {
   .offer__price {
     font-weight: 700;
     font-size: 60px;
-    line-height: 70pxpx;
+    line-height: 70px;
     color: #172755;
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -1075,6 +1078,11 @@ label {
   border-radius: 4px;
 }
 
+.button__signup:hover {
+  background: white;
+  color: rgb(114, 46, 209);
+}
+
 .input {
   height: 51px;
   width: 100%;
@@ -1177,5 +1185,115 @@ label {
   }
   .button__signup {
     max-width: 344px;
+  }
+}
+.footer {
+  width: 100%;
+  height: 154px;
+  background: #1F2F5C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__cont {
+  padding: 0 10px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__bottom {
+  background-image: url(img/logo-foot.png);
+  width: 138px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.logo__bottom:hover {
+  background: #EF2A82;
+  -webkit-mask-image: url(img/logo-foot.png);
+  --mask-image:url(img/logo-foot.png);
+  cursor: pointer;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+}
+
+.menu__item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #8794BA;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+.menu__item:hover {
+  color: rgb(255, 255, 255);
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.icon__soc {
+  font-size: 24px;
+  color: rgb(135, 148, 186);
+}
+
+.icon__soc:hover {
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    height: 15vw;
+  }
+  .footer__nav {
+    gap: 3.5vw;
+  }
+  .socials {
+    gap: 4vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    height: 97px;
+  }
+  .logo__bottom {
+    width: 124px;
+    height: 24px;
+  }
+  .logo__bottom:hover {
+    background: #EF2A82;
+    -webkit-mask-image: url(img/logo-foot-small.png);
+    --mask-image:url(img/logo-foot-small.png);
+    cursor: pointer;
+  }
+  .footer__nav {
+    display: none;
+  }
+  .socials {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .logo__bottom {
+    width: 24px;
+    height: 24px;
+  }
+  .socials {
+    gap: 11vw;
   }
 }/*# sourceMappingURL=style.css.map */
