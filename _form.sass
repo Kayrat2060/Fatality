@@ -4,12 +4,10 @@
     display: flex
     flex-wrap: nowrap
     justify-content: space-between
-    // border: 1px solid black
 
 .use__analytics, .signup__box
     width: 50%
     height: 522px
-    // border: 1px solid black
 
 .signup__box
     background: url(img/bg_signup.png) bottom no-repeat
@@ -19,9 +17,7 @@
 .signup__logos, .signup
     max-width: 428px
     height: 475px
-    // border: 1px solid black
     background: #F8F9FF
-
 
 .logos__title
     @include text(700, 32px, 40px, #160637)
@@ -39,10 +35,11 @@
     margin-bottom: 50px
 
 .left__hr, .right__hr
-    color: rgba(214, 214, 214, 1)
     width: 144px
     height: 0
-    color: rgba(214, 214, 214, 1)
+    padding: 0
+    border: none
+    border-top: 1px solid rgba(214, 214, 214, 1)
 
 .client__logos
     display: flex
@@ -104,6 +101,7 @@
 .button__signup:hover
     background: white
     color: rgba(114, 46, 209, 1)
+    transition: 0.2s ease-in
 
 .input
     height: 51px
@@ -112,10 +110,26 @@
     padding: 16px
     @include text(500, 16px, 19px, #000)
     background-color: #fff
-    // background-clip: padding-box
     border: 1px solid #D9D9D9
     border-radius: 4px
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+
+.form
+    width: 100%
+    margin: 0 auto
+    display: inline-flex
+    flex-direction: column
+    align-items: center
+    gap: 15px
+
+.button__freetrial, .button__signup
+    cursor: pointer
+
+.error
+    border: 2px solid red
+
+.success
+    border: 2px solid green
 
 .input::placeholder
     @include text(500, 16px, 19px, #8989A2)
@@ -126,24 +140,42 @@
 .stars
     display: flex
     justify-content: space-between
-    // height: 15px
     width: 95px
 
 .star
-    // height: 15px
-    color: rgba(255, 211, 111, 1)
+    color: #8989A2
     font-size: 20px
+    cursor: pointer
+    transition: 0.15s ease-in
+
+.grey
+    color: #8989A2
+
+.gold
+    color: rgba(255, 211, 111, 1)    
+
+.input__text
+    position: absolute
+    z-index: -2
+    opacity: 0
 
 .signup_hr
     width: 336px
     height: 0
-    border: 1px solid rgba(137, 137, 162, 1)
+    padding: 0
+    border: none
+    border-top: 1px solid rgb(137, 137, 162)
     opacity: 0.5
 
 .login
     @include text(500, 16px, 19px, #000)
 
+a.login:hover
+    color: #EF2A82
+    transition: 0.2s ease-in
+
 .login__link
+    text-decoration: none
     color: rgba(114, 46, 209, 1)
 
 @media screen and (max-width: 1024px)

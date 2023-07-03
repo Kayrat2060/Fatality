@@ -17,15 +17,15 @@
         <header class="header container">
 
             <div class="nav__left">
-                <div class="logo__top" onclick="location.href='#';"></div>
+                <div class="logo__top" onclick="location.href='index.html';"></div>
             </div>
 
             <div class="nav__right">
                 <input type="checkbox" id="burger">
                 <label for="burger"></label>
                 <nav class="header-nav">
-                    <a href="#" class="header-link">Products</a>
-                    <a href="#" class="header-link">Pricing</a>
+                    <a href="#333" class="header-link">Products</a>
+                    <a href="#222" class="header-link">Pricing</a>
                     <a href="#" class="header-link">FAQ</a>
                     <a href="#" class="header-link">Blog</a>
                     <a href="#" class="header-link">Blog</a>
@@ -36,8 +36,8 @@
             <div class="space"></div>
             
             <div class="sign">
-                <a href="#" class="signin__top">Sign in</a>
-                <a href="#" class="signup__top">Sign Up</a>
+                <a href="#111" class="signin__top">Sign in</a>
+                <a href="#111" class="signup__top">Sign Up</a>
             </div>
 
         </header>
@@ -47,7 +47,7 @@
                 <p class="description desc1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. </p>
                 <p class="description desc2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque volutpat est. </p>
                 <div class="button">
-                    <a href="#" class="button__text">Try for free</a>    
+                    <a href="#111" class="button__text">Try for free</a>    
                 </div>
                 
             </div>
@@ -86,7 +86,7 @@
             </div>
         </section>
     </div>
-    <div class="container screenshots">
+    <div id="333" class="container screenshots">
         <section class="screenshot screenshot1">
             <div class="screen__text">
                 <h2 class="screen__title">Automated Reports & Widget Alerts </h2>
@@ -117,7 +117,7 @@
     </div>
     <div class="price__plans">
         <section class="container">
-            <div class="priceplans__text">
+            <div id="222" class="priceplans__text">
                 <h2 class="pricing__title">Pricing Plans</h2>
                 <p class="pricing__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet
                     volutpat pellentesque volutpat est. </p>
@@ -180,22 +180,25 @@
             </div>
         </div>
         <div class="signup__box">
-            <div class="signup">
+            <div id="111" class="signup">
+
                 <h2 class="signup__title">Sign Up</h2>
-                <div class="button__freetrial">
-                    <a href="#" class="button__signup">Start your free trial</a>
-                </div>
-                <input type="text" class="input email" name="email" placeholder="Your primary email">
-                <input type="text" class="input password" name="password" placeholder="Password">
-                <input type="text" class="input repassword" name="repassword" placeholder="Re-type Password">
-                <h3 class="help__title">Help us get better</h3>
-                <div class="stars">
-                    <div class="star star1">★</div>
-                    <div class="star star2">★</div>
-                    <div class="star star3">★</div>
-                    <div class="star star4">★</div>
-                    <div class="star star5">★</div>
-                </div>
+                <form action="" class="form">
+                    <button class="button__freetrial button__signup">Start your free trial</button>                    
+                    <input type="email" class="input email" name="email" placeholder="Your primary email">
+                    <input type="password" class="input password" name="password" placeholder="Password">
+                    <input type="password" class="input repassword" name="repassword" placeholder="Re-type Password">                    
+                    <input type="text" class="input input__text" name="stars" placeholder="0" value="0">                    
+
+                    <h3 class="help__title">Help us get better</h3>
+                    <div class="stars">
+                        <div class="star star1">★</div>
+                        <div class="star star2">★</div>
+                        <div class="star star3">★</div>
+                        <div class="star star4">★</div>
+                        <div class="star star5">★</div>
+                    </div>
+                </form>
                 <hr class="signup_hr">
                 <p class="login">Already have an account? <a href="#" class="login login__link">Login</a></p>
             </div>
@@ -203,10 +206,10 @@
     </section>
     <footer class="footer">
         <div class="container footer__cont">
-            <div class="logo__bottom" onclick="location.href='#';"></div>
+            <div class="logo__bottom" onclick="location.href='index.html';"></div>
             <div class="footer__nav">
-                <a href="#" class="menu__item">Product</a>
-                <a href="#" class="menu__item">Pricing Plans</a>
+                <a href="#333" class="menu__item">Product</a>
+                <a href="#222" class="menu__item">Pricing Plans</a>
                 <a href="#" class="menu__item">FAQ</a>
                 <a href="#" class="menu__item">Blog</a>
             </div>
@@ -229,5 +232,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -21,9 +21,6 @@
     justify-content: space-between
     gap: 20px
     padding: 0 10px
-    // position: relative
-    // position: absolute
-    // top: 488px
     overflow-x: hidden
 
 .offer
@@ -47,8 +44,10 @@
 
 .hr1
     width: 220px
-    size: 1px
-    border: 1px solid #2A407C
+    height: 0
+    padding: 0
+    border: none
+    border-top: 2px solid #2A407C
     margin: 37px auto 28px
 
 .offer__currency
@@ -82,7 +81,7 @@
     color: #172755
 
 .hr2
-    border: 1px solid #D3D9E9
+    border-top: 2px solid #D3D9E9
 
 .offer__currency2
     color: #172755
@@ -97,10 +96,12 @@
 .order__button:hover
     background: #EF2A82
     border: 1px solid #EF2A82
+    transition: 0.2s ease-in
 
 .order__button2:hover
     background: #0F1F4B
     border: 1px solid #2A407C
+    transition: 0.2s ease-in
 
 .line
     display: none
@@ -108,7 +109,6 @@
 @media screen and (max-width: 1115px)
     .offers-box
         justify-content: center
-
 
 
 @media screen and (max-width: 600px)
@@ -120,8 +120,10 @@
         display: block
 
     .hr__prices
-        size: 1px
-        border: 1px solid #2A407C
+        height: 0
+        padding: 0
+        border: none
+        border-top: 2px solid #2A407C
         margin: 0 10px
 
     .priceplans__text
@@ -156,8 +158,7 @@
 
     .hr1
         width: 220px
-        size: 1px
-        border: 1px solid #D3D9E9
+        border-top: 2px solid #D3D9E9
         margin: 30px auto 20px
 
     .offer__currency
@@ -185,3 +186,4 @@
     .order__button:hover
         background: #0F1F4B
         border: 1px solid #2A407C
+        transition: 0.2s ease-in

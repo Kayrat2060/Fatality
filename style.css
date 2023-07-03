@@ -35,23 +35,26 @@ body {
 }
 
 .logo__top:hover {
-  /* display: inline-block */
   background: #EF2A82;
   -webkit-mask-image: url(img/logo_top.svg);
   --mask-image:url(img/logo_top.svg);
   cursor: pointer;
+  transition: 0.3s ease-in;
 }
 
 .signup__top:hover {
   color: white;
+  transition: 0.2s ease-in;
 }
 
 .signin__top:hover {
   color: white;
+  transition: 0.2s ease-in;
 }
 
 .header-link:hover {
   color: white;
+  transition: 0.2s ease-in;
 }
 
 .header, a {
@@ -138,7 +141,6 @@ label {
   height: 625px;
   background: url(img/main-screen.png);
   background-repeat: no-repeat;
-  /* background-size: 100% */
   background-size: 100% auto;
   background-position: right;
 }
@@ -146,7 +148,6 @@ label {
 .main__left {
   width: 35%;
   margin: 0 5% 0 13%;
-  /* margin: auto 5% auto 13% */
 }
 
 .title__h1 {
@@ -194,6 +195,7 @@ label {
   background-color: #FFFFFF;
   border: 1px solid #FFFFFF;
   color: #EF2A82;
+  transition: 0.2s ease-in;
 }
 
 @keyframes show {
@@ -226,13 +228,13 @@ label {
     height: 30px;
   }
   .logo__top:hover {
-    /* display: inline-block */
     margin: 20px 10px;
     width: 135px;
     height: 30px;
     background: #EF2A82;
     -webkit-mask-image: url(img/logo_top_mini.svg);
     --mask-image:url(img/logo_top_mini.svg);
+    transition: 0.2s ease-in;
   }
   .header-nav {
     gap: 3.5vw;
@@ -321,6 +323,7 @@ label {
   }
   label:hover {
     color: white;
+    transition: 0.2s ease-in;
   }
   [for=burger] {
     display: block;
@@ -374,8 +377,6 @@ label {
     height: 730px;
     background-image: url(img/background-top-mobile.png);
   }
-}
-@media screen and (max-width: 350px) {
   .logo__top {
     background-image: url(img/logo_solo_mini.png);
     margin: 20px 10px;
@@ -391,6 +392,7 @@ label {
     background: white;
     -webkit-mask-image: url(img/logo_solo_mini.png);
     --mask-image:url(img/logo_solo_mini.png);
+    transition: 0.2s ease-in;
   }
   .space {
     display: none;
@@ -735,8 +737,10 @@ label {
 
 .hr1 {
   width: 220px;
-  size: 1px;
-  border: 1px solid #2A407C;
+  height: 0;
+  padding: 0;
+  border: none;
+  border-top: 2px solid #2A407C;
   margin: 37px auto 28px;
 }
 
@@ -795,7 +799,7 @@ label {
 }
 
 .hr2 {
-  border: 1px solid #D3D9E9;
+  border-top: 2px solid #D3D9E9;
 }
 
 .offer__currency2 {
@@ -814,11 +818,13 @@ label {
 .order__button:hover {
   background: #EF2A82;
   border: 1px solid #EF2A82;
+  transition: 0.2s ease-in;
 }
 
 .order__button2:hover {
   background: #0F1F4B;
   border: 1px solid #2A407C;
+  transition: 0.2s ease-in;
 }
 
 .line {
@@ -839,8 +845,10 @@ label {
     display: block;
   }
   .hr__prices {
-    size: 1px;
-    border: 1px solid #2A407C;
+    height: 0;
+    padding: 0;
+    border: none;
+    border-top: 2px solid #2A407C;
     margin: 0 10px;
   }
   .priceplans__text {
@@ -894,8 +902,7 @@ label {
   }
   .hr1 {
     width: 220px;
-    size: 1px;
-    border: 1px solid #D3D9E9;
+    border-top: 2px solid #D3D9E9;
     margin: 30px auto 20px;
   }
   .offer__currency {
@@ -942,6 +949,7 @@ label {
   .order__button:hover {
     background: #0F1F4B;
     border: 1px solid #2A407C;
+    transition: 0.2s ease-in;
   }
 }
 .signup__form {
@@ -997,10 +1005,11 @@ label {
 }
 
 .left__hr, .right__hr {
-  color: rgb(214, 214, 214);
   width: 144px;
   height: 0;
-  color: rgb(214, 214, 214);
+  padding: 0;
+  border: none;
+  border-top: 1px solid rgb(214, 214, 214);
 }
 
 .client__logos {
@@ -1081,6 +1090,7 @@ label {
 .button__signup:hover {
   background: white;
   color: rgb(114, 46, 209);
+  transition: 0.2s ease-in;
 }
 
 .input {
@@ -1098,6 +1108,27 @@ label {
   border: 1px solid #D9D9D9;
   border-radius: 4px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form {
+  width: 100%;
+  margin: 0 auto;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.button__freetrial, .button__signup {
+  cursor: pointer;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.success {
+  border: 2px solid green;
 }
 
 .input::-moz-placeholder {
@@ -1134,14 +1165,32 @@ label {
 }
 
 .star {
-  color: rgb(255, 211, 111);
+  color: #8989A2;
   font-size: 20px;
+  cursor: pointer;
+  transition: 0.15s ease-in;
+}
+
+.grey {
+  color: #8989A2;
+}
+
+.gold {
+  color: rgb(255, 211, 111);
+}
+
+.input__text {
+  position: absolute;
+  z-index: -2;
+  opacity: 0;
 }
 
 .signup_hr {
   width: 336px;
   height: 0;
-  border: 1px solid rgb(137, 137, 162);
+  padding: 0;
+  border: none;
+  border-top: 1px solid rgb(137, 137, 162);
   opacity: 0.5;
 }
 
@@ -1154,7 +1203,13 @@ label {
   font-style: normal;
 }
 
+a.login:hover {
+  color: #EF2A82;
+  transition: 0.2s ease-in;
+}
+
 .login__link {
+  text-decoration: none;
   color: rgb(114, 46, 209);
 }
 
@@ -1219,6 +1274,7 @@ label {
   -webkit-mask-image: url(img/logo-foot.png);
   --mask-image:url(img/logo-foot.png);
   cursor: pointer;
+  transition: 0.2s ease-in;
 }
 
 .footer__nav {
@@ -1238,6 +1294,7 @@ label {
 
 .menu__item:hover {
   color: rgb(255, 255, 255);
+  transition: 0.2s ease-in;
 }
 
 .socials {
@@ -1254,6 +1311,7 @@ label {
 .icon__soc:hover {
   color: white;
   cursor: pointer;
+  transition: 0.2s ease-in;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1272,7 +1330,7 @@ label {
     height: 97px;
   }
   .logo__bottom {
-    width: 124px;
+    width: 120px;
     height: 24px;
   }
   .logo__bottom:hover {
@@ -1280,6 +1338,7 @@ label {
     -webkit-mask-image: url(img/logo-foot-small.png);
     --mask-image:url(img/logo-foot-small.png);
     cursor: pointer;
+    transition: 0.2s ease-in;
   }
   .footer__nav {
     display: none;
