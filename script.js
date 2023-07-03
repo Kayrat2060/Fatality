@@ -74,7 +74,7 @@ repassword.addEventListener('input', (event) => {
 
 const starsAll = document.querySelectorAll('.star');
 const stars = document.querySelector('.stars');
-const starsСount  = document.querySelector('.input__text');
+const rating  = document.querySelector('.input__text');
 
 
 let n = 0; // количество кликов по звездам
@@ -90,8 +90,8 @@ function colorReset() {
 starsArray.forEach(element => {
     element.addEventListener('click', () => {
         let indexEl = starsArray.indexOf(element);
-        starsСount.value = indexEl + 1;
-        starsСount.textContent = indexEl + 1;
+        rating.value = indexEl + 1;
+        rating.textContent = indexEl + 1;
         n++;
         for (let index = 0; index < starsArray.length; index++) {
             if (index <= indexEl) {
