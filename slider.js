@@ -4,7 +4,7 @@ document.addEventListener('touchend', handleTouchEnd, false);
 
 const offersBox = document.querySelector('.offers-box');
 
-console.log(offersBox);
+// console.log(offersBox);
 
 let x1 = null;
 let x2  = null;

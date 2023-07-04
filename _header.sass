@@ -6,6 +6,7 @@
     height: 815px
     background-image: url(img/Backgraund_top_new.png)
     background-position: left bottom
+    overflow-x: hidden
 
 .logo__top
     background-image: url(img/logo_top.svg)
@@ -93,20 +94,24 @@ label
     display: flex
     justify-content: space-between
     align-items: flex-start
-
+    gap: 5vw
+    
 .main__right
-    width: 47%
-
+    width: 873px
+    flex-shrink: 0
+    
 .img__box
-    height: 625px
+    height: 555px
     background: url(img/main-screen.png)
     background-repeat: no-repeat
-    background-size: 100% auto
-    background-position: right
+    background-position: left
+    flex-shrink: 0
+    filter: drop-shadow(0px 18px 50px rgba(25, 42, 89, 0.20))
 
 .main__left
-    width: 35%
-    margin: 0 5% 0 13%
+    width: 550px
+    margin: 0 10px
+    flex-shrink: 0
 
 .title__h1
     @include text(700, 50px, 60px, #FFFFFF)
@@ -180,6 +185,7 @@ label
         flex-direction: column-reverse
         align-items: center
         align-content: center
+        gap: 0
 
     .main__left
         width: 90%
@@ -230,7 +236,7 @@ label
 
 @media screen and (max-width: 600px)
     .top
-        height: calc(38vw + 588px) // 137vw
+        height: calc(38vw + 588px)
         background-image: url(img/Backgraund_top_new.png)
 
     .header-nav
