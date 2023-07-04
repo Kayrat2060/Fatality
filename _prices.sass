@@ -16,12 +16,21 @@
     margin: 30px auto 0
     @include text(400, 18px, 27px, #8794BA)
 
+
+.slider__link
+    margin: 0px auto
+    width: 100%
+    overflow: hidden
+    display: flex
+    justify-content: center
+
 .offers-box
     display: flex
-    justify-content: space-between
-    gap: 20px
     padding: 0 10px
-    overflow-x: hidden
+    flex-shrink: 0
+    overflow: hidden
+    justify-content: center
+    gap: 5vw
 
 .offer
     flex-shrink: 0
@@ -33,6 +42,7 @@
     background: #0F1F4B
     box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.20)
     text-align: center
+    overflow: hidden
     
 
 .offer__title
@@ -138,6 +148,8 @@
         text-align: left
         margin: 20px auto 0
 
+    .offers-box
+        gap: 20px
 
     .offer
         flex-shrink: 0
